@@ -7,6 +7,15 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+@layer base {
+  h3 {
+    @apply text-sm font-bold md:text-base;
+  }
+
+  h6 {
+    @apply font-light text-sm;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,11 +26,28 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+input:disabled {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+input {
+  padding: 0.5rem 0.75rem;
+  border: solid;
+  border-radius: 5px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 3px;
+  margin: 2px;
+  border-radius: 10px;
+  border: solid;
+}
+.badge:hover {
+  background-color: #007bff;
+  cursor: pointer;
 }
