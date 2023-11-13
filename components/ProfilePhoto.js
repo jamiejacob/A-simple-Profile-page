@@ -55,7 +55,7 @@ const ProfilePhoto = ({ image }) => {
         />
         <label
           htmlFor="photo"
-          className="p-2 rounded bg-sky-300 text-white text-xs md:text-base"
+          className="p-2 rounded bg-sky-300 text-white  text-xs md:text-base"
         >
           Upload new picture
         </label>
